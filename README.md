@@ -12,32 +12,29 @@ The system combines:
 
 ---
 
+
+
+---
 ## High-Level Architecture
 
 The architecture follows a **tiered agent model** with a central orchestrator.
 
 ---
 
-## Architecture & Flow Diagrams
+## Architecture, Flow Diagrams and some results
 
-### 1. Overall System Architecture
-![Overall Architecture](uploads/architecture_overview.png)
+![Basic Architecture](uploads/Basic_architecture.jpeg)
+![System Index](uploads/index.png)
 
-### 2. Orchestrator Flow
-![Orchestrator Flow](uploads/orchestrator_flow.png)
+![System Index 2](uploads/index2.png)
 
-### 3. GA4 Agent Pipeline
-![GA4 Agent](uploads/ga4_agent_flow.png)
+![GA4 Data From Source](uploads/ga4_data_from_source.png)
 
-### 4. SEO Agent Pipeline
-![SEO Agent](uploads/seo_agent_flow.png)
+![GA4 Explanation](uploads/explaination_for_ga4.png)
 
-### 5. LLM Interaction & Reasoning
-![LLM Reasoning](uploads/llm_reasoning_flow.png)
+![GA4 Deep Dive Logs](uploads/ga4_deep_dive_logs.png)
 
-### 6. End-to-End Request Lifecycle
-![End-to-End Flow](uploads/end_to_end_flow.png)
-
+![SEO Check](uploads/seo_check.png)
 ---
 
 ## Core Components
@@ -93,39 +90,21 @@ BASE_URL=http://3.110.18.218/
 API_KEY=LLM API KEY
 GEMINI_API_KEY=1ST KEY 
 GEMINI_API_KEY2=2ND KEY
-spreadsheetId="<SPREADSHEET ID>
+spreadsheetId="<SPREADSHEET ID>"
+
 
 ## API Specification
 
 ### POST `/query`
 
 #### Request Body
+
 ```json
 {
   "query": "Which pages have low engagement in the last 14 days?",
   "propertyId": "516823782"
 }
 
-<p align="center">
-  <img src="uploads/Basic_architecture.jpg" width="700"/>
-</p>
-<p align="center">
-  <img src="uploads/index.png" width="700"/>
-</p>
-<p align="center">
-  <img src="uploads/index2.png" width="700"/>
-</p>
-<p align="center">
-  <img src="uploads/ga4_data_from_source.png" width="700"/>
-</p>
-<p align="center">
-  <img src="uploads/explaination_for_ga4.png" width="700"/>
-</p>
-<p align="center">
-  <img src="uploads/ga4_deep_dive_logs.png" width="700"/>
-</p>
-<p align="center">
-  <img src="uploads/seo_check.png" width="700"/>
-</p>
+
 
 
