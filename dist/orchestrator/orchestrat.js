@@ -5,7 +5,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 const IntentClassifier_1 = __importDefault(require("../utils/IntentClassifier"));
 const SeoAgentService_1 = require("../services/SeoAgentService");
 const Ga4AgentService_1 = require("../services/Ga4AgentService");
-const MixedAgentService_1 = require("../services/MixedAgentService");
 const orchestrator = async (input) => {
     const query = (input.query || "").trim();
     const propertyId = input.propertyId ?? null;
@@ -38,7 +37,7 @@ const orchestrator = async (input) => {
                     error: "propertyId required for GA4 part of mixed query",
                 };
             }
-            return await (0, MixedAgentService_1.mixedAgent)();
+            return await (0, Ga4AgentService_1.ga4Agent)({ propertyId: propertyId, query: query });
         case "UNKNOWN":
         default:
             return {

@@ -42,7 +42,7 @@ const orchestrator = async (input: UserQuery) => {
         };
       }
 
-      return await mixedAgent();
+      return await ga4Agent({propertyId:propertyId, query:query});
 
     case "UNKNOWN":
     default:
