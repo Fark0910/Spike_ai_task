@@ -26,7 +26,7 @@ The architecture follows a **tiered agent model** with a central orchestrator.
 ![Basic Architecture](uploads/Basic_architecture.jpeg)
 ![System Index](uploads/index.png)
 
-![System Index 2](uploads/index2.png)
+![System Index 2](uploads/index_2.png)
 
 ![GA4 Data From Source](uploads/ga4_data_from_source.png)
 
